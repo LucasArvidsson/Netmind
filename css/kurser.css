@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+:root {
+  --peru: #cd9452;
+  --black: #222;
+  --white: #fff;
+  --light-black: #666;
+  --light-white: #ccc;
+  --light-bg: #f5f5f5;
+  --dark-bg: rgba(0, 0, 0, .7);
+  --border: .1rem solid #aaa;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.1s cubic-bezier(.43, 1.1, .62, 1.08);
+
+}
+
+
+
+.line{
+  height: 1px;
+  background-color: var(--black);
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-bar {
+  background: #1b1a1b;
+  backdrop-filter: blur(15px);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  transition: 2s ease;
+  transition-property: left;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.side-bar .menu {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+.side-bar .menu .item a:hover {
+  background: #33363a;
+  transition: 1s ease;
+}
+
+.side-bar .menu .item i {
+  margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 1s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+  background: #262627;
+  display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+  padding-left: 80px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px auto 200px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  background: var(--nice);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 20px;
+}
+
+.section-header {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.section-content {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.layer-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.layer-description {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
