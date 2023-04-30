@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar menu With Sub-menus | Using HTML, CSS & JQuery</title>
+    <style media="screen">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/kurser.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+
+
+    <div class="side-bar">
+        <header>
+        </header>
+        <div class="menu">
+            <div class="item"><a href="../index.php"></i>NetMind</a></div>
+            <div class="item">
+                <a class="sub-btn"></i>Grunder<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#TCP" class="sub-item">TCP/IP</a>
+                    <a href="#OSI" class="sub-item">OSI</a>
+                    <a href="#UTP" class="sub-item">UTP</a>
+                    <a href="#Begräpp" class="sub-item">Begräpp</a>
+
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>LAN<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#LAN" class="sub-item">Vad är LAN</a>
+                    <a href="#BL" class="sub-item"></a>
+                    <a href="#" class="sub-item">Begräpp</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"></i>WAN<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Vad är WAN</a>
+                    <a href="#" class="sub-item"></a>
+                    <a href="#" class="sub-item">Begräpp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+
+    <div id="Grunder" class="container">
+        <!-- #region TCP -->
+        <div id="TCP" class="section">
+            <h1 class="section-header">TCP/IP Protokoll</h1>
+            <p class="section-content">
+                TCP/IP-protokollstacken är en uppsättning protokoll och standarder som definierar hur enheter i ett
+                nätverk
+                kommunicera med varandra. Stapeln är uppdelad i fyra lager, som vart och ett har en specifik
+                funktion i kommunikationsprocessen.
+            </p>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Application Layer</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Applikationsskiktet</div>
+                    <p class="layer-description">
+                        Applikationsskiktet är det översta lagret i TCP/IP-protokollstacken. Det tillhandahåller
+                        gränssnittet
+                        mellan applikationsprogrammen som körs på en dator och nätverket. Applikationsskiktet
+                        definierar de protokoll och standarder som används av applikationer för att kommunicera över
+                        nätverket.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Transport Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Transportlagret</div>
+                    <p class="layer-description">
+                        Transportlagret är det andra lagret i TCP/IP-protokollstacken. Det gör det möjligt för
+                        applikationer att
+                        kommunicera med varandra över nätverket. Transportskiktet tillhandahåller tjänster som t.ex
+                        segmentering, flödeskontroll och felkontroll för att säkerställa att data överförs
+                        tillförlitligt
+                        mellan enheterna i nätverket.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Network Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Nätverkslagret</div>
+                    <p class="layer-description">
+                        Nätverkslagret är det tredje lagret i TCP/IP-protokollstacken. Det ger routing och
+                        adresseringsfunktioner som krävs för att enheter i nätverket ska kunna kommunicera med varandra.
+                        De
+                        nätverkslagret definierar de protokoll och standarder som används för att bestämma den bästa
+                        vägen för data till
+                        resa mellan enheter i nätverket.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Link Layer</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Länklagret</div>
+                    <p class="layer-description">
+                        Länklagret är det nedre lagret av TCP/IP-protokollstacken. Det ger det fysiska
+                        anslutning mellan enheterna i nätverket. Länklagret definierar protokollen och
+                        standarder som används för att överföra data över den fysiska länken, som tvinnade par eller
+                        koaxialkablar.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <p class="section-content">
+                Tillsammans tillhandahåller dessa fyra lager av TCP/IP-protokollstacken medlen för applikationer
+                kommunicera med varandra över ett nätverk. TCP/IP säkerställer att data överförs tillförlitligt och
+                effektivt mellan enheter i nätverket.
+            </p>
+        </div>
+        <div class="line"></div>
+
+        <!-- #endregion -->
+        <!-- #region OSI -->
+        <div id="OSI" class="section">
+            <h1 class="section-header">OSI Modellen</h1>
+            <p class="section-content">
+                OSI-modellen, eller Open Systems Interconnection-modellen, är ett ramverk för att förstå och
+                standardisera hur kommunikation sker mellan två eller flera enheter över ett nätverk. Den används ofta
+                som en referensmodell för nätverksprotokoll och tekniker. OSI-modellen är indelad i sju lager, som vart
+                och ett har en specifik roll att spela i kommunikationsprocessen. Notera att de sista tre skikten i OSI
+                modellen är tillsammans samma som TCP/IPs fjärde lagret. Utöver det följer modellerna samma standrarder.
+            </p>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Application Layer</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Applikationsskiktet</div>
+                    <p class="layer-description">
+                        Detta lager ansvarar för att tillhandahålla tjänster till applikationsprogram som behöver
+                        kommunicera över nätverket. Exempel på tjänster som tillhandahålls på detta lager
+                        inkluderar autentisering, kryptering och filöverföring.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Presentation Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Presentations lagret</div>
+                    <p class="layer-description">
+                        Detta lager ansvarar för att översätta data som tas emot från applikationslagret till ett format
+                        som kan överföras över nätverket. Detta lager kan också vara ansvarigt för komprimering,
+                        kryptering och dekryptering av data.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Session Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Session lagret</div>
+                    <p class="layer-description">
+                        Detta lager ansvarar för att upprätta, underhålla och avsluta anslutningar mellan enheter i
+                        nätverket. Det här lagret kan också vara ansvarigt för att hantera sessioner, till exempel
+                        överföring av data mellan enheter.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Transport Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Transportlagret</div>
+                    <p class="layer-description">
+                        Transportlagret är det andra lagret i TCP/IP-protokollstacken. Det gör det möjligt för
+                        applikationer att
+                        kommunicera med varandra över nätverket. Transportskiktet tillhandahåller tjänster som t.ex
+                        segmentering, flödeskontroll och felkontroll för att säkerställa att data överförs
+                        tillförlitligt
+                        mellan enheterna i nätverket.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Network Layer</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Nätverkslagret</div>
+                    <p class="layer-description">
+                        Nätverkslagret är det tredje lagret i TCP/IP-protokollstacken. Det ger routing och
+                        adresseringsfunktioner som krävs för att enheter i nätverket ska kunna kommunicera med varandra.
+                        De
+                        nätverkslagret definierar de protokoll och standarder som används för att bestämma den bästa
+                        vägen för data till
+                        resa mellan enheter i nätverket.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Link Layer</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Länklagret</div>
+                    <p class="layer-description">
+                        Länklagret är det nedre lagret av TCP/IP-protokollstacken. Det ger det fysiska
+                        anslutning mellan enheterna i nätverket. Länklagret definierar protokollen och
+                        standarder som används för att överföra data över den fysiska länken, som tvinnade par eller
+                        koaxialkablar.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- #endregion -->
+        <!-- #region UTP -->
+        <div id="UTP" class="section">
+            <h1 class="section-header">UTP</h1>
+            <p class="section-content">
+                UTP står för Unshielded Twisted Pair. Det är en typ av kabel som används i nätverk och andra
+                telekommunikationstillämpningar.
+                UTP-kabel består av fyra par ledningar som är tvinnade tillsammans, där varje par vanligtvis har olika
+                färg. Ledningarnas vridning hjälper till att minska interferens och överhörning mellan paren.
+                UTP-kabel används ofta för Ethernet-nätverk och finns tillgänglig i en mängd olika kvaliteter,
+                där varje klass har olika maximal dataöverföringshastighet och avstånd. UTP-kabel är relativt billig och
+                enkel att installera,
+                vilket gör den till ett populärt val för många nätverksprogram.
+            </p>
+        </div>
+        <div class="line"></div>
+        <!-- #endregion -->
+        <!-- #region Begräpp -->
+        <div id="Begräpp" class="section">
+            <h1 class="section-header">Grundera och Begräpp</h1>
+            <p class="section-content">
+                Olika begräpp som kommer vara nödvändiga att förstå om du vill bygga en förståelse för Grunderna i
+                Nätverksteknik
+            </p>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Adjacent-layer interaction</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Interaktion med angränsande lager</div>
+                    <p class="layer-description">
+                        Interaktion med angränsande lager avser kommunikation och samarbete mellan två angränsande lager
+                        i en nätverksmodell. Till exempel, i OSI-modellen, skulle transportlagret och sessionslagret
+                        betraktas som angränsande lager, och de skulle behöva interagera för att korrekt överföra data
+                        mellan enheter.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Encapsulation</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Inkapsling</div>
+                    <p class="layer-description">
+                        Inkapsling är processen att innesluta data från ett lager av en nätverksmodell i rubriken eller
+                        trailern för nästa lägre lager. Detta möjliggör en ordnad och effektiv överföring av data mellan
+                        olika lager och gör det möjligt för olika nätverksprotokoll att arbeta tillsammans.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Frame</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Ram</div>
+                    <p class="layer-description">
+                        En ram är en dataenhet som sänds över ett nätverk. Den består vanligtvis av en rubrik, som
+                        innehåller kontroll information, och en nyttolast, som innehåller de faktiska data som överförs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Networking model</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Nätverksmodell</div>
+                    <p class="layer-description">
+                        En nätverksmodell är en uppsättning regler och riktlinjer som definierar hur enheter i ett
+                        nätverk ska interagera och kommunicera med varandra. Den mest kända nätverksmodellen är
+                        OSI-modellen, som definierar sju lager av kommunikation och specificerar funktionerna för varje
+                        lager.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Packet</h2>
+            <div class="layer">
+                <div>
+                    <div class="layer-name">Paket</div>
+                    <p class="layer-description">
+                        Ett paket är en dataenhet som sänds över ett nätverk. Den består vanligtvis av en rubrik, som
+                        innehåller kontroll information, och en nyttolast, som innehåller de faktiska data som överförs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Protocol Data Unit (PDU)</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Protokoll</div>
+                    <p class="layer-description">
+                        En protokoll dataenhet (PDU) är en dataenhet som används för att representera ett specifikt
+                        lager av en nätverksmodell. Till exempel, i OSI-modellen skulle en PDU representera ett enda
+                        lager, såsom transportlagret eller nätverkslagret.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Same-layer interaction</h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name">Interaktion</div>
+                    <p class="layer-description">
+                        Interaktion på samma lager hänvisar till kommunikation och samarbete mellan två enheter på samma
+                        lager i en nätverksmodell. Till exempel skulle två enheter på transportlagret i OSI-modellen
+                        behöva interagera för att korrekt överföra data mellan varandra.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+
+
+        <div class="line"></div>
+        <!-- #endregion -->
+        <!-- #region LAN -->
+        <div class="line"></div>
+        <div class="section">
+            <div id="LAN" class="section">
+                <h1 class="section-header">LAN</h1>
+                <p class="section-content">
+                    Ett LAN, eller Local Area Network, är en grupp sammankopplade datorer och enheter som delar ett
+                    gemensamt kommunikationsnätverk. Det primära syftet med ett LAN är att tillåta enheter inom ett
+                    litet geografiskt område, såsom ett hem eller kontor, att dela resurser och kommunicera med
+                    varandra.
+                    <br>
+                    <br>
+                    En av de viktigaste fördelarna med ett LAN är dess höga hastighet, vilket gör att enheter kan
+                    kommunicera med varandra snabbt och effektivt. Detta gör det möjligt för användare att komma åt
+                    delade resurser, såsom skrivare, filer och internetanslutning, med minimal fördröjning.
+                    <br>
+                    <br>
+                    För att skapa ett LAN måste användare ansluta sina enheter till en central hubb eller switch med
+                    Ethernet-kablar. Denna hubb eller switch fungerar sedan som en gateway, vilket gör att enheterna
+                    kan kommunicera med varandra och komma åt delade resurser.
+                    <br>
+                    <br>
+                    Förutom Ethernet-kablar använder många LAN även trådlös teknik, såsom Wi-Fi, för att ansluta
+                    enheter. Detta gör att användare kan ansluta till nätverket utan att behöva fysiska kablar,
+                    vilket gör det lättare att lägga till och ta bort enheter från nätverket.
+                    <br>
+                    <br>
+                    Sammantaget ger ett LAN ett bekvämt och effektivt sätt för enheter inom ett litet geografiskt
+                    område att dela resurser och kommunicera med varandra. Genom att tillåta användare att enkelt
+                    komma åt delade resurser och kommunicera med varandra kan ett LAN bidra till att förbättra
+                    samarbetet och produktiviteten i hemmet eller på kontoret.
+            </div>
+
+            <div id="BL" class="line"></div>
+
+            <div  class="section">
+                <h1 class="section-header">LAN och Begräpp</h1>
+                <p class="section-content">
+                    Olika begräpp som kommer vara nödvändiga att förstå om du vill bygga en förståelse för Grunderna
+                    till LAN i Nätverksteknik
+                </p>
+            </div>
+            <h2 class="section-header"></h2>
+            <div class="layer">
+
+                <div>
+                    <div class="layer-name"></div>
+                    <p class="layer-description">
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-header">Adjacent-layer interaction</h2>
+                <div class="layer">
+                    <div>
+                        <div class="layer-name">Interaktion med angränsande lager</div>
+                        <p class="layer-description">
+                            Interaktion med angränsande lager avser kommunikation och samarbete mellan två angränsande
+                            lager
+                            i en nätverksmodell. Till exempel, i OSI-modellen, skulle transportlagret och sessionslagret
+                            betraktas som angränsande lager, och de skulle behöva interagera för att korrekt överföra
+                            data
+                            mellan enheter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+    </div>
+
+
+    <div></div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            //jquery for expand and collapse the sidebar
+            $('.menu-btn').click(function () {
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            });
+
+            $('.close-btn').click(function () {
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+        });
+        $(document).ready(function () {
+
+
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
